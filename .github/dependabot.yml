@@ -4,8 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: monthly
-      time: "06:00"
-      timezone: America/Los_Angeles
+      time: "10:00"
+      timezone: Europe/Kiev
     open-pull-requests-limit: 10
     labels:
       - "🏠 Housekeeping"
@@ -13,8 +13,8 @@ updates:
     directory: "/"
     schedule:
       interval: monthly
-      time: "06:00"
-      timezone: America/Los_Angeles
+      time: "10:00"
+      timezone: Europe/Kiev
     open-pull-requests-limit: 10
     labels:
       - "🏠 Housekeeping"

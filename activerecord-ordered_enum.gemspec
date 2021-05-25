@@ -1,4 +1,4 @@
-require_relative "lib/activerecord/ordered_enum/version"
+require_relative "lib/active_record/ordered_enum/version"
 
 Gem::Specification.new do |spec|
   spec.name = "activerecord-ordered_enum"
@@ -23,4 +23,6 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.add_dependency(%q<activesupport>.freeze, [">= 5.2.0"])
+  spec.add_dependency(%q<activerecord>.freeze, [">= 5.2.0"])
 end
