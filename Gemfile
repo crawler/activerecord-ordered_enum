@@ -1,14 +1,12 @@
 source "https://rubygems.org"
 gemspec
 
-gem 'sqlite3'
 gem "minitest", "~> 5.11"
 gem "minitest-ci", "~> 3.4"
 gem "minitest-reporters", "~> 1.3"
 gem "rake", "~> 13.0"
-gem "rubocop"
-gem "rubocop-minitest"
-gem "rubocop-packaging"
-gem "rubocop-performance"
-gem "rubocop-rake"
-gem "reek"
+gem "sqlite3", "~> 1.4"
+gem "reek", "~> 6.1", require: false
+gem "standard", "~> 1.12", require: false
+gem "rubocop-minitest", "~> 0.19", require: false
+gem "rubocop-packaging", "~> 0.5", require: false

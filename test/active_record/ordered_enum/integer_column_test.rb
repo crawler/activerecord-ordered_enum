@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-require_relative 'base_test'
+
+require_relative "base_test"
 
 class ActiveRecord::OrderedEnum::IntegerColumTest < ActiveRecord::OrderedEnum::BaseTest
   def setup

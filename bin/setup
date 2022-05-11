@@ -6,4 +6,6 @@ set -vx
 which overcommit > /dev/null 2>&1 && overcommit --install
 bundle install
 
-# Do any other automated setup that you need to do here
+# link gems for easier code navigation
+mkdir -p vendor/links
+bundle list --paths | xargs -I {} -L 1 bash -c 'echo -n "{} vendor/links/"; basename -a {}' |xargs -L 1 ln -s

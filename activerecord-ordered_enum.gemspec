@@ -15,7 +15,8 @@ Gem::Specification.new do |spec|
     "bug_tracker_uri" => "https://github.com/crawler/activerecord-ordered_enum/issues",
     "changelog_uri" => "https://github.com/crawler/activerecord-ordered_enum/releases",
     "source_code_uri" => "https://github.com/crawler/activerecord-ordered_enum",
-    "homepage_uri" => spec.homepage
+    "homepage_uri" => spec.homepage,
+    "rubygems_mfa_required" => "true"
   }
 
   # Specify which files should be added to the gem when it is released.
@@ -23,6 +24,6 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.add_dependency(%q<activesupport>.freeze, [">= 5.2.0"])
-  spec.add_dependency(%q<activerecord>.freeze, [">= 5.2.0"])
+  spec.add_dependency("activesupport".freeze, [">= 5.2.0"])
+  spec.add_dependency("activerecord".freeze, [">= 5.2.0"])
 end
